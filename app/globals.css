@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --obsidian: #0f0f0f;
+  --surface: #121414;
+  --surface-container-low: #1a1c1c;
+  --surface-container: #1e2020;
+  --surface-container-high: #282a2b;
+  --surface-container-highest: #333535;
+  --foreground: #f5f5f5;
+  --foreground-muted: #c8c6c5;
+  --foreground-subtle: #8f8f8f;
+  --crimson: #c62828;
+  --crimson-deep: #a31f1f;
+  --crimson-soft: #ffb4ac;
+  --border: rgb(224 224 224 / 15%);
+  --border-strong: rgb(224 224 224 / 40%);
+  --background: var(--obsidian);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--foreground-muted);
+  --color-subtle: var(--foreground-subtle);
+  --color-surface: var(--surface);
+  --color-surface-low: var(--surface-container-low);
+  --color-surface-card: var(--surface-container);
+  --color-surface-high: var(--surface-container-high);
+  --color-crimson: var(--crimson);
+  --color-crimson-deep: var(--crimson-deep);
+  --color-crimson-soft: var(--crimson-soft);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
+  --spacing-container: 1280px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgb(198 40 40 / 65%);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--crimson);
+  outline-offset: 3px;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+@utility kh-container {
+  width: min(100% - 32px, 1280px);
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .kh-container {
+    width: min(100% - 48px, 1280px);
+  }
+}
+
+@utility text-display {
+  font-family: var(--font-inter-tight), var(--font-inter), sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.125;
+}
+
+@utility text-headline-lg {
+  font-family: var(--font-inter-tight), var(--font-inter), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+@utility text-headline-md {
+  font-family: var(--font-inter-tight), var(--font-inter), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.333;
+}
+
+@utility text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.556;
+}
+
+@utility text-label-sm {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.333;
+  text-transform: uppercase;
+}
+
+@utility border-hairline {
+  border-color: var(--border);
+}
