@@ -75,7 +75,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="rounded border border-[#dedede] bg-white p-8 shadow-[0_2px_8px_rgb(0_0_0_/_0.04)]"
+              className="flex flex-col rounded border border-[#dedede] bg-white p-8 shadow-[0_2px_8px_rgb(0_0_0_/_0.04)]"
             >
               <svg
                 className="size-8 text-crimson"
@@ -97,7 +97,7 @@ export function ServicesSection() {
               </p>
               <a
                 href="#contact"
-                className="mt-8 inline-flex items-center text-label-sm text-crimson hover:text-crimson-deep"
+                className="mt-8 inline-flex items-center self-start pt-2 text-label-sm text-crimson hover:text-crimson-deep xl:mt-auto"
               >
                 Learn More
                 <span className="ml-3" aria-hidden="true">

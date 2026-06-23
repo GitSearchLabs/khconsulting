@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { SectionLabel } from "@/components/ui/section-label";
 
@@ -41,11 +42,15 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div
-            className="min-h-[260px] rounded-lg border border-[#dedede] bg-[#d9d9d9] shadow-[0_10px_32px_rgb(0_0_0_/_0.08)] sm:min-h-[360px] md:min-h-[470px]"
-            role="img"
-            aria-label="Image placeholder for healthcare consulting facility"
-          />
+          <div className="relative min-h-[260px] overflow-hidden rounded-lg border border-[#dedede] bg-[#d9d9d9] shadow-[0_10px_32px_rgb(0_0_0_/_0.08)] sm:min-h-[360px] md:min-h-[470px]">
+            <Image
+              src="/jeff-schoondyke-healthcare-advisor.png"
+              alt="Jeff, Karing Hearts Consulting healthcare advisor"
+              fill
+              sizes="(min-width: 1024px) 46vw, 100vw"
+              className="object-cover object-[50%_34%]"
+            />
+          </div>
         </div>
       </Container>
     </section>

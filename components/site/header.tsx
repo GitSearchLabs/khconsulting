@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useId, useState } from "react";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -44,10 +45,18 @@ export function Header() {
         <a
           href="#top"
           onClick={() => setIsOpen(false)}
-          className="min-w-0 max-w-[210px] truncate font-display text-[19px] font-bold tracking-[-0.025em] text-foreground sm:max-w-none sm:text-[24px] sm:tracking-[-0.04em]"
+          className="flex min-w-0 max-w-[230px] items-center gap-3 font-display text-[19px] font-bold tracking-[-0.025em] text-foreground sm:max-w-none sm:text-[24px] sm:tracking-[-0.04em]"
           aria-label="Karing Hearts Consulting home"
         >
-          Karing Hearts Consulting
+          <Image
+            src="/hand-in-hand-icon.png"
+            alt=""
+            width={36}
+            height={36}
+            className="size-8 shrink-0 object-contain sm:size-9"
+            aria-hidden="true"
+          />
+          <span className="truncate">Karing Hearts Consulting</span>
         </a>
 
         <nav
