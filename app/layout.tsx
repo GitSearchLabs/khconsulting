@@ -38,6 +38,24 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      {
+        url: "/hand-in-hand-icon.png",
+        type: "image/png",
+        sizes: "2000x2000",
+      },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        type: "image/png",
+        sizes: "2000x2000",
+      },
+    ],
+  },
   openGraph: {
     title:
       "Karing Hearts Consulting | Healthcare Strategy for Independent Physicians",
@@ -47,10 +65,10 @@ export const metadata: Metadata = {
     siteName: "Karing Hearts Consulting",
     images: [
       {
-        url: "/hero-outpatient-suite.png",
-        width: 1807,
-        height: 870,
-        alt: "Premium outpatient specialty care facility with interventional procedure equipment",
+        url: "/hand-in-hand-icon.png",
+        width: 2000,
+        height: 2000,
+        alt: "Karing Hearts Consulting hand in hand icon",
       },
     ],
     locale: "en_US",
@@ -62,7 +80,7 @@ export const metadata: Metadata = {
       "Karing Hearts Consulting | Healthcare Strategy for Independent Physicians",
     description:
       "Strategic healthcare consulting for regulatory, operational, and facility growth initiatives.",
-    images: ["/hero-outpatient-suite.png"],
+    images: ["/hand-in-hand-icon.png"],
   },
   robots: {
     index: true,
