@@ -32,15 +32,15 @@ export function Hero() {
             id="hero-heading"
             className="font-display text-[clamp(2.65rem,13vw,5rem)] font-bold leading-[1.02] tracking-[-0.035em] text-foreground sm:leading-[0.98] sm:tracking-[-0.06em]"
           >
-            Helping Independent Physicians Build the{" "}
-            <span className="text-crimson">Future</span> of Specialty Care.
+            Helping Independent Physicians Navigate{" "}
+            <span className="text-crimson">Healthcare Growth.</span>
           </h1>
 
           <p className="mt-8 max-w-[590px] text-[17px] leading-7 text-[#f0cfcb] sm:mt-10 sm:text-body-lg">
-            We partner with independent physician groups to develop and launch
-            advanced outpatient healthcare facilities. From navigating complex
-            regulatory landscapes to operationalizing new clinics, we provide
-            the executive leadership necessary for strategic growth.
+            Built from real-world experience establishing an independent
+            cardiovascular facility in Tennessee, Karing Hearts Consulting helps
+            physician groups navigate regulatory approvals, facility
+            development, and strategic expansion with confidence.
           </p>
 
           <div className="mt-12 flex flex-col gap-4 sm:mt-16 sm:flex-row">

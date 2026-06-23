@@ -14,30 +14,28 @@ export function AboutSection() {
             </SectionLabel>
 
             <h2 className="mt-7 font-display text-[clamp(2.1rem,10vw,3.5rem)] font-bold leading-[1.08] tracking-[-0.03em] text-[#111111] sm:mt-9">
-              Your Partner in Healthcare Innovation.
+              We&apos;ve Been Through the Process.
             </h2>
 
             <div className="mt-9 space-y-6 text-[17px] leading-8 text-[#707070] sm:mt-12 sm:space-y-8 sm:text-[18px]">
               <p>
-                Karing Hearts Consulting was founded on the belief that
-                independent physicians are the true drivers of quality care. We
-                recognize the immense challenges you face when attempting to
-                expand your practice or develop new, specialized facilities in a
-                highly regulated environment.
+                Launching an advanced healthcare facility requires far more than
+                a business plan. It demands regulatory navigation, strategic
+                planning, stakeholder engagement, operational readiness, and
+                relentless attention to detail.
               </p>
 
               <p>
-                Our team provides the executive-level support and specialized
-                knowledge required to turn ambitious growth plans into
-                operational realities. We act as an extension of your leadership
-                team, handling the complexities of project management,
-                regulatory filings, and strategic planning.
+                Karing Hearts Consulting was created after helping navigate the
+                complex path to establishing an independent cardiovascular
+                facility in Tennessee. That experience provides a practical
+                understanding of the challenges healthcare organizations face
+                when pursuing growth initiatives.
               </p>
 
               <p>
-                By partnering with us, you can focus on what you do best:
-                providing exceptional patient care while we build the
-                operational and strategic foundation for your future.
+                We help independent physicians and healthcare leaders navigate
+                those challenges and bring their vision to life.
               </p>
             </div>
           </div>
