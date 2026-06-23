@@ -60,7 +60,7 @@ export function Header() {
         </a>
 
         <nav
-          className="hidden items-center gap-10 xl:flex"
+          className="hidden items-center gap-10 lg:flex"
           aria-label="Primary navigation"
         >
           {navItems.map((item) => (
@@ -86,16 +86,16 @@ export function Header() {
           ))}
         </nav>
 
-        <ButtonLink
+        <a
           href="#contact"
-          className="hidden h-11 rounded bg-crimson px-6 text-[13px] tracking-[0.04em] xl:inline-flex"
+          className="hidden h-11 items-center justify-center rounded bg-crimson px-6 text-[13px] font-semibold leading-none tracking-[0.04em] text-white hover:bg-crimson-deep lg:inline-flex"
         >
           SCHEDULE A CONSULTATION
-        </ButtonLink>
+        </a>
 
         <button
           type="button"
-          className="inline-flex size-11 shrink-0 items-center justify-center rounded border border-white/15 text-foreground hover:border-white/35 hover:bg-white/10 xl:hidden"
+          className="inline-flex size-11 shrink-0 items-center justify-center rounded border border-white/15 text-foreground hover:border-white/35 hover:bg-white/10 lg:hidden"
           aria-controls={menuId}
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -124,14 +124,14 @@ export function Header() {
       {isOpen ? (
         <>
           <div
-            className="fixed inset-x-0 top-[72px] z-40 h-[calc(100svh-72px)] bg-black/55 xl:hidden"
+            className="fixed inset-x-0 top-[72px] z-40 h-[calc(100svh-72px)] bg-black/55 lg:hidden"
             aria-hidden="true"
             onClick={() => setIsOpen(false)}
           />
 
           <div
             id={menuId}
-            className="fixed inset-x-0 top-[72px] z-50 max-h-[calc(100svh-72px)] overflow-y-auto border-b border-white/10 bg-[#0b0f0f] px-4 py-6 shadow-[0_24px_80px_rgb(0_0_0_/_0.45)] xl:hidden"
+            className="fixed inset-x-0 top-[72px] z-50 max-h-[calc(100svh-72px)] overflow-y-auto border-b border-white/10 bg-[#0b0f0f] px-4 py-6 shadow-[0_24px_80px_rgb(0_0_0_/_0.45)] lg:hidden"
           >
             <nav aria-label="Mobile navigation">
               <div className="flex flex-col divide-y divide-white/10">
